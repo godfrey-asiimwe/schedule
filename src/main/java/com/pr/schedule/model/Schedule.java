@@ -29,16 +29,20 @@ public class Schedule {
     @Column(name = "endDate")
     private Date endDate;
 
+    @Column(name = "projectId")
+    private String projectId;
+
     public Schedule() {
 
     }
 
-    public Schedule(String scheduleName, String description,Date startDate,Date endDate) {
+    public Schedule(String scheduleName, String description,Date startDate,Date endDate, String projectId) {
         super();
         this.scheduleName = scheduleName;
         this.description = description;
         this.startDate = startDate;
         this.endDate = endDate;
+        this.projectId = projectId;
     }
 
     public long getId() {
@@ -78,6 +82,14 @@ public class Schedule {
 
     public void setEndDate(Date endDate) {
         this.endDate = endDate;
+    }
+
+    public String getProjectId() {
+        return projectId;
+    }
+
+    public void setProjectid(String projectId) {
+        this.projectId = projectId;
     }
 
 

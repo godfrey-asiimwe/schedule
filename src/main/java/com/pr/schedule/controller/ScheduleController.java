@@ -1,7 +1,5 @@
 package com.pr.schedule.controller;
 
-
-
 import java.util.List;
 
 import com.pr.schedule.model.Schedule;
@@ -62,7 +60,6 @@ public class ScheduleController {
 
     @DeleteMapping("/{id}")
     public void delete(@PathVariable Integer id) {
-
         scheduleService.deleteSchedule(id);
     }
 

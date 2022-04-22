@@ -13,8 +13,10 @@ import java.util.List;
 @Service
 @Transactional
 public class scheduleService {
+
     @Autowired
     private ScheduleRepository scheduleRepository;
+
     public List<Schedule> listAllSchedules() {
         return scheduleRepository.findAll();
     }
