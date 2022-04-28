@@ -15,9 +15,9 @@ public class Schedule {
 
     @Id
     @GeneratedValue(strategy = GenerationType.AUTO)
-    private long id;
+    private Integer id;
 
-    @Column(name = "schedule_name")
+    @Column(name = "scheduleName")
     private String scheduleName;
 
     @Column(name = "description")
@@ -45,10 +45,10 @@ public class Schedule {
         this.projectId = projectId;
     }
 
-    public long getId() {
+    public Integer getId() {
         return id;
     }
-    public void setId(long id) {
+    public void setId(Integer id) {
         this.id = id;
     }
 
